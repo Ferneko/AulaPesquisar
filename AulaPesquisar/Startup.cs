@@ -24,7 +24,7 @@ namespace AulaPesquisar
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<Contexto>(a => a.UseSqlServer("Server=c3po;Database=DadosAula;Trusted_Connection=True;"));
+            services.AddDbContext<Contexto>(a => a.UseSqlServer("Server=c3po;Database=projetointegradorAula;User Id=sa;Password=aluno123;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
